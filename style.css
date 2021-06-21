@@ -1,0 +1,51 @@
+body {
+    background:#000;
+}
+
+.nav-area {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:1200px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+
+.nav-area a {
+    padding: 15px 50px;
+    position: relative;
+    overflow: hidden;
+    background: teal;
+    display: inline-block;
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+    border-radius:50px;
+    margin: 0 10px;
+    font-weight:700;
+    letter-spacing: 2px;
+
+
+}
+
+.nav-area a:before {
+    transition: all 0.5s ease-out;
+    display:block;
+    content:'';
+    width:200%;
+    height:100%;
+    background:linear-gradient(transparent,white,transparent);
+    transform:rotate(-30deg);
+    position: absolute;
+    top:-200%;
+    left:-50%;
+    opacity:0.7;
+
+}
+
+.nav-area a:hover:before {
+    top:200%;
+}
